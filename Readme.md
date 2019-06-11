@@ -11,6 +11,7 @@
 - In file `hooks.rb` define actions after/before each feature/scenario/tag.
 - In file `helpers.rb` create modules and methods that you think can be used for many steps/features.
 - Create files `.feature` in folder `features` and use descriptive names.
+- Run rubocop with `bundle exec rubocop features`
 
 ## Documentation
 
