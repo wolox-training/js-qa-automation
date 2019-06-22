@@ -48,7 +48,6 @@ else # else create driver instance for desktop browser
       $headless = Headless.new
       $headless.start
     end
-    # $driver = Selenium::WebDriver.for(:chrome, args:['--incognito','--disable-popup-blocking','binary_location=/var/task/bin/headless-chromium'],prefs: { "disable-popup-blocking":"true"})
     options = Selenium::WebDriver::Chrome::Options.new(args:['--incognito','--disable-popup-blocking','binary_location=/var/task/bin/headless-chromium'], prefs: { "disable-popup-blocking":"true"})
     $driver = Selenium::WebDriver.for(:chrome, options: options)
     $driver.manage.window.maximize
